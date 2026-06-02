@@ -1,0 +1,599 @@
+@import url("ress.css");
+
+html{
+    scroll-behavior: smooth;
+    li{
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+        color: #000;
+    }
+}
+section{
+    margin: 0 140px;
+}
+
+/* ヘッダー  ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
+header{
+    padding: 0 140px;
+    height: 100px;
+    /* border-bottom: 2px solid #000; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav{
+    ul{
+        font-size: 1.4rem;
+        display: flex;
+        li{
+            width: 100px;
+            margin: 0 14px;
+        }
+    }
+    li a:hover{
+        color: blue;
+        font-weight: bold;
+        
+    }
+}
+
+/* トップ view  ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
+.top_view{
+    font-family: Serif;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0 140px;
+    background: url("../img/top_view.jpg") ;
+    background-size: cover;
+}
+.site_name img{
+    margin-top:50px;
+    width: 500px;
+}
+    .top_title{
+        color: #000;
+        line-height: 80px;
+        font-size: 8.8rem;
+        margin-bottom: 80px;
+    }
+    .top_view ul li{
+        width: fit-content;
+        margin: 16px 0;
+        padding: 0 50px;
+        font-size: 3.2rem;
+        color: #fff;
+        background: #2A61BA;
+    }
+
+/* セクションタイトル 共通 ---------------------------------------------*/
+.section_title{
+    margin: 200px 0 50px 0;
+    display: flex;
+    justify-content: center;
+    h2{
+        font-size: 3.2rem;
+        border-bottom: 3px solid #000;
+    }
+}
+
+/* プロフィール ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
+.profile_wrap{
+    display: flex;
+    align-items: center;
+}
+.profile_img{
+    width: 40%;
+    height: 450px;
+    background: url("../img/purofile.jpg");
+    background-size: cover;
+    margin-right: 50px;
+}
+.profile_text{
+    width: 50%;
+}
+.name{
+    font-size: 3.2rem;
+    line-height: 40px;
+    p{
+        font-size: 1.6rem;
+        margin-bottom: 50px;
+    }
+}
+
+.tool{
+    margin: 50px 0 100px 0;
+    line-height: 40px;
+    h3{
+        font-size: 2.4rem;
+    }
+    p{
+        font-size: 1.6rem;
+    }
+}
+
+.profile_under_line{
+    width: 1000px;
+}
+
+.profile_under_line{
+    width: 100vw;
+    height: 100px;
+    background: url("../img/profile_under_line.jpg") ;
+    background-size: cover;
+}
+/* works topic ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
+.topic{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.topic article{
+    width: 50%;
+    height: 50vh;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+}
+.topic article:nth-child(1n){
+    background: #AFAFAF;
+}
+.topic article:nth-child(2n){
+    background: #D9D9D9;
+}
+
+.topic article:nth-child(3n){
+    width: 100%;
+    background: #868686;
+    justify-content: center;
+}
+
+.website{
+    width: 320px;
+}
+.web_text{
+    width: 50%;
+    margin-left: 50px;
+    h3{
+        font-size: 1.6rem;
+        margin-bottom: 8px;
+    }
+    p{
+        margin-bottom: 24px;
+    }
+}
+.website_btn{
+    width: fit-content;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 12px 32px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+}
+.website_btn:hover{
+    background:#a6f491;
+    transition:  0.3s;
+}
+.arrow_right{
+    margin-left: 50px;
+}
+
+/* works ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
+.works_btn_wrap{
+    margin: 100px 0 50px 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    height: 50px;
+}
+
+.work_btn{
+    font-size: 1.6rem;
+    position: relative;
+}
+
+
+.work_btn.active::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 2px;
+    background: #000;
+    transform: scaleX(1);
+    transform-origin: left;
+
+}
+
+
+.works_line{
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+.works_line li p{
+    font-size: 1.6rem;
+}
+/* WEB ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
+.works_web_list img{
+    width: 100%;
+}
+.works_line article{
+    scroll-margin-top: 120px;
+
+    width: 100%;
+    height: 50%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-around;
+    flex-shrink: 0;
+
+}
+.works_web li{
+    /* margin-bottom: 50px; */
+    padding: 32px;
+    display: flex;
+    justify-content: center;
+    width: calc(100%/3);
+}
+
+.works_web_list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* graphic ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
+.works_graphic img{
+    width: 100%;
+}
+.works_graphic_list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.works_graphic_list li{
+    padding: 32px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    width: calc(100%/3);
+}
+
+/* movie ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
+
+.works_movie_list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.works_movie_list li{
+    display: flex;
+    justify-content: center;
+    width: calc(100%/5);
+}
+.works_movie_list li video{
+    width: 100%;
+}
+/* contact--------------------------------------------------------------------- */
+.contact_text{
+    margin: 100px 0;
+    font-size: 2.4rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+/* sns btn--------------------------------------------------------------------- */
+.sns_btn{
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+
+}
+.arrow_link{
+    width: 500px;
+    height: 80px;
+    padding: 30px;
+    margin: 0 30px;
+    display: flex;
+    align-items: center;
+    border: 2px solid #000;
+    
+    position: relative;
+    background: transparent;
+    cursor: pointer;
+}
+
+/* 線 */
+.arrow_link::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    width: 80px;
+    height: 2px;
+    background: #000;
+    transform: translateY(-50%);
+
+    transform-origin: left center;
+
+    transition: transform 0.4s ease;
+}
+/* arrow */
+.arrow_link::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
+    transform: translateY(-50%) rotate(45deg);
+
+
+transition:transform 0.4s ease;
+}
+
+/* hover */
+.arrow_link:hover::before {
+    transform:
+    translateY(-50%)
+    scaleX(1.15);
+}
+
+.arrow_link:hover::after {
+    transform:
+    translateY(-50%)
+    translateX(10px)
+    rotate(45deg);
+}
+
+/* footer--------------------------------------------------------------------- */
+footer{
+    width: 100%;
+    height: 50px;
+    margin-top: 100px;
+    color: #fff;
+    background: #3B3B3B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* スマホ版ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+
+@media screen and (max-width: 480px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
+    .section_title{
+        margin-top: 100px;
+    }
+    main{
+        overflow: hidden;
+    }
+    section {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    header{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+
+        width: 100%;
+        height: 80px;
+
+        padding: 0 20px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        background: #fff;
+        z-index: 999;
+
+        box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+    }
+    .logo_area img{
+        width: 100px;
+    }
+    nav ul li{
+        width: fit-content;
+        justify-content: space-around;
+        font-size: 0.8rem;
+    }
+
+    .top_view{
+        padding: 200px 30px;
+        width: 100%;
+        background: url("../img/sp-topview.png") no-repeat ;
+        background-size: cover;
+    }
+    .site_name{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .site_name img{
+        width: 300px;
+    }
+    .top_view .top_title{
+        font-size: 3.8rem;
+        padding: 0;
+        line-height: 50px;
+    }
+    .top_title img{
+        width: 300px;
+    }
+
+    .top_view ul{
+        width: 300px;
+        margin-top: 100px;
+        li{
+        font-size: 1.4rem;
+        height: 50px;
+        margin: 8px 0;
+        display: flex;
+        align-items: center;
+        }
+    }
+/* プロフィール ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
+.profile_wrap{
+flex-direction: column;
+}
+.profile_img{
+    margin: auto;
+    width: 90%;
+}
+.profile_text{
+    width: 80%;
+}
+.name{
+    font-size: 3.2rem;
+    line-height: 40px;
+    margin-top: 50px;
+}
+.name p{
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+}
+
+.tool{
+    margin: 50px 20px 50px 20px;
+    line-height: 40px;
+    h3{
+        font-size: 2.4rem;
+    }
+    p{
+        margin-top: 30px;
+        font-size: 1.2rem;
+        line-height: 30px;
+    }
+}
+
+
+.profile_under_line{
+    width: 100vw;
+    height: 50px;
+    background: url("../img/profile_under_line.jpg") ;
+    background-size: cover;
+}
+
+/* works topic ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
+
+.topic article{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.website{
+    width: 200px;
+}
+.web_text{
+    width: 100%;
+    margin-left: 0;
+    p{
+        font-size: 1rem;
+        margin-bottom: 24px;
+    }
+}
+.website_btn{
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight:lighter;
+    background: rgb(249, 216, 51);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 80px;
+}
+
+
+/* WEB ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
+.works_web_list img{
+    width: 50%;
+}
+.works_web li{
+    width: 100%;
+    padding: 0;
+    margin-bottom: 40px;
+}
+.works_web a{
+    display: flex;
+    gap: 20px;
+}
+.works_web_list li p{
+    font-size: 1.2rem;
+}
+
+/* graphic ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
+.works_graphic img{
+    width: 50%;
+}
+.works_graphic_list{
+    gap: 40px;
+}
+.works_graphic_list li{
+    width: 100%;
+    padding: 0 30px;
+    margin: 0;
+}
+.works_graphic_list li a{
+    display: flex;
+    gap: 20px;
+
+}
+.works_graphic_list li p{
+    font-size: 1.2rem;
+}
+
+/* movie ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
+
+.works_movie_list li{
+    width: calc(100%/3);
+    padding: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+/* contact--------------------------------------------------------------------- */
+.contact_text{
+    margin: 100px 0;
+    font-size: 1.4rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* sns btn--------------------------------------------------------------------- */
+.sns_btn{
+    font-size: 1.6rem;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+/* 線 */
+.arrow_link::before{
+    width: 30px;
+}
+
+/* footer--------------------------------------------------------------------- */
+footer{
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+
+}
