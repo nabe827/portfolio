@@ -20,7 +20,7 @@
     <meta property="og:type" content="website"/>
     <link rel="shortcut icon" href="http://www.hoge.hoge/favicon.ico" type="image/vnd.microsoft.icon"/>
     <link rel="apple-touch-icon" href="http://www.hoge.hoge/logo.pn"/>
-    <link href="css/portfolio.css" rel="stylesheet" type="text/css">
+    <link href="portfolio.css" rel="stylesheet" type="text/css">
     <!-- <link href="css/sp-portfolio.css" rel="stylesheet" type="text/css"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
@@ -181,5 +181,5 @@
     </main>
     <footer><small>sample &copy; 2026 design</small></footer>
   </body>
-  <script src="js/portfolio.js"></script>
+  <script src="portfolio.js"></script>
 </html>
