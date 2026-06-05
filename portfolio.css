@@ -1,4 +1,7 @@
 @import url("ress.css");
+.container-lg px-3 my-5 markdown-body{
+all: initial;
+}
 
 html{
     scroll-behavior: smooth;
