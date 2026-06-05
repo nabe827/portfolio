@@ -1,4 +1,4 @@
-
+h1　私の人生
   <body>
     <header>
       <div class="logo_area"><img src="img/logo.png" alt=""></div>
