@@ -1,31 +1,4 @@
-<!DOCTYPE html>
-<html lang="ja">
-  <head>
-    <link rel="stylesheet" href=""/>
-    <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0"/>
-    <meta name="format-detection" content="telephone=no"/>
-    <meta name="keywords" content=""/>
-    <meta name="description" content="ここに説明文を設定"/>
-    <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:site" content="@twitteraccount"/>
-    <meta property="og:site_name" content="サイト名"/>
-    <meta property="og:title" content="サイトタイトル"/>
-    <meta property="og:description" content="サイト説明文"/>
-    <meta property="og:url" content="https://www.hogehoge.com"/>
-    <meta property="og:image" content="https://www.hogehoge.com./hoge.jpg"/>
-    <meta property="og:image:type" content="image/jpeg"/>
-    <meta property="og:image:width" content="600"/>
-    <meta property="og:image:height" content="400"/>
-    <meta property="og:type" content="website"/>
-    <link rel="shortcut icon" href="http://www.hoge.hoge/favicon.ico" type="image/vnd.microsoft.icon"/>
-    <link rel="apple-touch-icon" href="http://www.hoge.hoge/logo.pn"/>
-    <link href="css/portfolio.css" rel="stylesheet" type="text/css">
-    <!-- <link href="css/sp-portfolio.css" rel="stylesheet" type="text/css"> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
-  </head>
+
   <body>
     <header>
       <div class="logo_area"><img src="img/logo.png" alt=""></div>
